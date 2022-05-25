@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/toolbarHome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#3676FF03"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wallpapers"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:layout_marginStart="12dp"
+                android:textColor="#FF3D00"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bestOfMonth"
+            android:layout_below="@id/toolbarHome"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:paddingStart="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Best of the Month"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvBom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/colortone"
+            android:layout_below="@id/bestOfMonth"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:paddingStart="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Color Tone"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvColorTone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/category"
+            android:layout_below="@id/colortone"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:paddingStart="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Categories"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

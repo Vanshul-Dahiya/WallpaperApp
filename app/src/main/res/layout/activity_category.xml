@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+    <TextView
+        android:id="@+id/CategoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type of category"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:id="@+id/CategoryCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="56 available"
+        android:textSize="20sp"
+        android:layout_below="@id/CategoryTitle"
+        android:layout_marginStart="20dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RCVCAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/CategoryCount"
+        />
+
+</RelativeLayout>
